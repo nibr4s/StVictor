@@ -1,0 +1,100 @@
+/* Import fonts first */
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spacebetween {
+    justify-content: space-between;
+}
+
+.aligncenter {
+    align-items: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Alice', serif;   
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.bgred {
+    background-color: red;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.w70 {
+    width: 70%;
+}
+
+/* Header */
+header{
+    padding: 10px 0;
+    background-color: rgba(158, 169, 203, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(8px);
+}
+header > nav {
+    margin: auto;
+
+}
+.pucesNone {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.logo{
+    width: 100px;
+}
+
+.white {
+    color: white;
+}
+.black {
+    color: black;
+}
+.blackhover:hover {
+    color: rgb(30, 30, 30);
+}
+/* hero section */
+.bgHero{
+    width: 100%;
+}
+.sectionhero{
+    height: 100vh;
+    object-fit: cover;
+
+}
+.divHero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
