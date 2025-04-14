@@ -1,100 +1,178 @@
-/* Import fonts first */
+* Importation de la police "Inter" depuis Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* Global styles */
-* {
-    box-sizing: border-box;
+/* -------- RESET CSS -------- */
+/* Réinitialise le box model pour tous les éléments, 
+   et supprime les marges et paddings par défaut */
+   * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
 }
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-}
-
-.flex {
+ 
+/* ------ Flex ------ */
+.flex{
     display: flex;
     flex-wrap: wrap;
 }
-
-.spacebetween {
+ 
+.spaceBetween{
     justify-content: space-between;
 }
-
-.aligncenter {
+ 
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+ 
+.alignCenter{
     align-items: center;
 }
-
-h1, h2, h3 {
-    font-family: 'Alice', serif;   
-}
-
-p {
-    font-family: 'Noto Sans', sans-serif;
-}
-
-.bgred {
-    background-color: red;
-}
-
-.w50 {
+/*###########################################*/
+/* WIDTH */
+.w50{
     width: 50%;
 }
-
-.w25 {
-    width: 25%;
+.w60 {
+    width: 60%;
 }
-
-.w70 {
+.w70{
     width: 70%;
 }
-
+ 
+.w25{
+    width: 25%;
+}
+/*##############*/
+/*##############*/
+.plusnone{
+    list-style: none;
+}
+ 
+a{
+    text-decoration: none;
+}
+ 
+.black{
+    color: black;
+}
+ 
+.black:hover{
+color: #4d3e9a;
+}
+ 
+.white{
+    color: white;
+}
+/*##############*/
+ 
+/* ------ TitreAndParagraphe ------ */
+h1{
+    font-family: "Alice", serif;
+}
+ 
+h1{
+    font-size: 60px;
+    margin: 20px 0;
+}
+ 
+p{
+ 
+}
+/*#######################*/
+ 
+/* Pour voir les box */
+.bgred{
+    background-color: red;
+}
+/*###########################*/
+ 
 /* Header */
+ 
 header{
-    padding: 10px 0;
-    background-color: rgba(158, 169, 203, 0.5);
+    padding: 20px 0;
+    background-color: rgb(10, 174, 174, 0.25);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     backdrop-filter: blur(8px);
+    z-index: 3;
 }
-header > nav {
+ 
+header>nav{
     margin: auto;
-
 }
-.pucesNone {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-}
+ 
 .logo{
     width: 100px;
 }
-
-.white {
-    color: white;
-}
-.black {
-    color: black;
-}
-.blackhover:hover {
-    color: rgb(30, 30, 30);
-}
-/* hero section */
-.bgHero{
-    width: 100%;
-}
-.sectionhero{
+ 
+/* HERO SECTION */
+ 
+.sectionHero{
     height: 100vh;
-    object-fit: cover;
-
+    position: relative;
 }
+ 
 .divHero{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+}
+ 
+.divHero > p{
+    font-size: 25px;
+}
+ 
+.bghero{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+/*Section Service*/
+.carteViolette{
+    background-color: #4d3e9a93;
+    display: block;
+    width: 23%;
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+ 
+}
+ 
+.sectionService{
+    position: relative;
+    top: -50px;
+}
+.Vcolor{
+    color: #4d3e9a;
+}
+
+.sectionimg > img{
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+    display: flex;
+}
+.flexend{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.V2color{
+    background-color: red;
+}
+.sticky{
+
+
+}
+
+.border {
+    border: solid;
+    border-radius: 10%;
+    border: color rgb(168, 168, 168) ;
 }
